@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Material symbols</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-25..0"
+    />
+    <style>
+      .material-symbols-outlined {
+        /* 굵기를 200으로 고정하여 톤을 일치시킴 */
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 200,
+          /* 여기서 굵기 조절 (100~700) */ "GRAD" 0,
+          "opsz" 24; /* 아이콘의 시각적 크기 최적화 */
+
+        font-size: 24px; /* 실제 아이콘 크기 */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+      }
+
+      /* 커스텀 굵기 */
+      .icon-bold-fix {
+        font-variation-settings: "wght" 500 !important;
+      }
+
+      .icon-light-fix {
+        font-variation-settings: "wght" 150 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="color: #333; display: flex; gap: 20px">
+      <span class="material-symbols-outlined icon-light-fix">home</span>
+
+      <span class="material-symbols-outlined icon-light-fix">settings</span>
+
+      <span class="material-symbols-outlined icon-bold-fix">person</span>
+
+      <span class="material-symbols-outlined">search</span>
+
+      <span class="material-symbols-outlined">notifications</span>
+    </div>
+  </body>
+</html>

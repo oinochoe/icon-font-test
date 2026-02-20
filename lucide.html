@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2</title>
+    <style>
+      /* 커스텀 */
+      .my-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: top;
+        width: 24px; /* 아이콘 박스 크기 통일 */
+        height: 24px;
+      }
+
+      .my-icon svg {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <i
+      data-lucide="house"
+      aria-label="Home icon"
+      stroke-linejoin="miter"
+      stroke-linecap="square"
+    ></i>
+    <i
+      data-lucide="volume-2"
+      stroke-linejoin="miter"
+      stroke-linecap="square"
+    ></i>
+    <i
+      data-lucide="x"
+      stroke-width="2"
+      stroke-linejoin="miter"
+      stroke-linecap="square"
+    ></i>
+    <i
+      data-lucide="menu"
+      stroke-width="1"
+      stroke-linejoin="miter"
+      stroke-linecap="square"
+    ></i>
+
+    <i data-lucide="aperture"></i>
+
+    <!-- 커스텀 -->
+    <i
+      data-lucide="stars"
+      stroke-width="1"
+      stroke-linejoin="miter"
+      stroke-linecap="square"
+    ></i>
+
+    <span class="my-icon custom-svg">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M12 3v3m0 12v3M5.314 5.314l2.122 2.122m9.128 9.128l2.122 2.122M3 12h3m12 0h3M5.314 18.686l2.122-2.122m9.128-9.128l2.122-2.122M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
+        ></path>
+      </svg>
+    </span>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      // 아이콘 렌더링 실행 함수
+      const initIcons = () => {
+        lucide.createIcons({
+          // attrs: {
+          //   "stroke-linejoin": "miter",
+          //   "stroke-linecap": "square",
+          //   "stroke-width": 1,
+          // },
+        });
+      };
+
+      // DOM 로드 완료 후 실행
+      document.addEventListener("DOMContentLoaded", initIcons);
+    </script>
+  </body>
+</html>
+<!-- Production version -->
